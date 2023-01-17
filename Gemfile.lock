@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    erbse (0.1.4)
+      temple
+    temple (0.9.1)
+
+PLATFORMS
+  aarch64-linux
+
+DEPENDENCIES
+  erbse
+
+BUNDLED WITH
+   2.3.22
