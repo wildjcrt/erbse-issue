@@ -1,0 +1,6 @@
+version: "2"
+syncs:
+  erbse-app-sync:
+    src: ./
+    sync_excludes: [.git, .bundle]
+    sync_strategy: native_osx

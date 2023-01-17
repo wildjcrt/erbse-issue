@@ -1,0 +1,16 @@
+version: "3"
+volumes:
+  erbse-app-sync:      { external: true }
+  bundle:              { driver: local }
+  config:              { driver: local }
+services:
+  app:
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - erbse-app-sync:/app:nocopy
+      - bundle:/bundle
+      - config:/config
